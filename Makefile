@@ -2,7 +2,7 @@ CC=gcc
 CFLAGS=-Ofast -Wall -Wextra
 SRC=$(wildcard src/*.c)
 INC=-Iinclude
-LIB=-lglfw
+LIB=-lglfw -lm
 BIN=pong
 
 default:

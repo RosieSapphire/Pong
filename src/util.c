@@ -2,6 +2,13 @@
 #include <stdio.h>
 #include <malloc.h>
 #include <stdlib.h>
+#include <time.h>
+#include <math.h>
+
+void rand_init(void)
+{
+	srand(time(0));
+}
 
 char *file_load(const char *path)
 {
@@ -19,4 +26,19 @@ char *file_load(const char *path)
 	fclose(f);
 	buf[len - 1] = 0;
 	return buf;
+}
+
+float randf(void)
+{
+	return (float)rand() / (float)RAND_MAX;
+}
+
+void vec2_normalize(float v[2])
+{
+	float mag = sqrtf(v[0] * v[0] + v[1] * v[1]);
+	if(!mag)
+		return;
+
+	v[0] /= mag;
+	v[1] /= mag;
 }

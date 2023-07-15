@@ -113,3 +113,10 @@ void rect_terminate(void)
 {
 	glDeleteProgram(rect_shader);
 }
+
+bool rect_contains_point(rect_t r, float p[2])
+{
+	bool inside_x = p[0] >= r.x && p[0] < r.x + r.w;
+	bool inside_y = p[1] >= r.y && p[1] < r.y + r.h;
+	return inside_x && inside_y;
+}
