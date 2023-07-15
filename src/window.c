@@ -8,7 +8,8 @@ void window_init(void)
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_DOUBLEBUFFER, GLFW_TRUE);
-	window_handle = glfwCreateWindow(1920, 1080, "Pong", NULL, NULL);
+	window_handle = glfwCreateWindow(WIN_WIDTH, WIN_HEIGHT,
+			"Pong", NULL, NULL);
 	glfwMakeContextCurrent(window_handle);
 
 	gladLoadGL((GLADloadfunc)glfwGetProcAddress);

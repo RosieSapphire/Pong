@@ -5,7 +5,7 @@
 
 paddle paddle_create(rgbf_t col)
 {
-	return (paddle){.rect = {32, 32, 64, 256}, col};
+	return (paddle){.rect = {16, 16, 32, 128}, col};
 }
 
 void paddle_draw(paddle p)
