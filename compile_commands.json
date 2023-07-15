@@ -1,0 +1,98 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Ofast",
+      "-Wall",
+      "-Wextra",
+      "-Iinclude",
+      "-o",
+      "pong",
+      "src/gl.c"
+    ],
+    "directory": "/home/rosie/dev/opengl/pong",
+    "file": "/home/rosie/dev/opengl/pong/src/gl.c",
+    "output": "/home/rosie/dev/opengl/pong/pong"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Ofast",
+      "-Wall",
+      "-Wextra",
+      "-Iinclude",
+      "-o",
+      "pong",
+      "src/main.c"
+    ],
+    "directory": "/home/rosie/dev/opengl/pong",
+    "file": "/home/rosie/dev/opengl/pong/src/main.c",
+    "output": "/home/rosie/dev/opengl/pong/pong"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Ofast",
+      "-Wall",
+      "-Wextra",
+      "-Iinclude",
+      "-o",
+      "pong",
+      "src/paddle.c"
+    ],
+    "directory": "/home/rosie/dev/opengl/pong",
+    "file": "/home/rosie/dev/opengl/pong/src/paddle.c",
+    "output": "/home/rosie/dev/opengl/pong/pong"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Ofast",
+      "-Wall",
+      "-Wextra",
+      "-Iinclude",
+      "-o",
+      "pong",
+      "src/rect.c"
+    ],
+    "directory": "/home/rosie/dev/opengl/pong",
+    "file": "/home/rosie/dev/opengl/pong/src/rect.c",
+    "output": "/home/rosie/dev/opengl/pong/pong"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Ofast",
+      "-Wall",
+      "-Wextra",
+      "-Iinclude",
+      "-o",
+      "pong",
+      "src/util.c"
+    ],
+    "directory": "/home/rosie/dev/opengl/pong",
+    "file": "/home/rosie/dev/opengl/pong/src/util.c",
+    "output": "/home/rosie/dev/opengl/pong/pong"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Ofast",
+      "-Wall",
+      "-Wextra",
+      "-Iinclude",
+      "-o",
+      "pong",
+      "src/window.c"
+    ],
+    "directory": "/home/rosie/dev/opengl/pong",
+    "file": "/home/rosie/dev/opengl/pong/src/window.c",
+    "output": "/home/rosie/dev/opengl/pong/pong"
+  }
+]
