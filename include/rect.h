@@ -13,6 +13,6 @@ extern uint rect_vao, rect_vbo, rect_ebo;
 void rect_init(void);
 void rect_draw(rect_t r, rgbf_t c);
 void rect_terminate(void);
-bool rect_contains_point(rect_t r, float p[2]);
+bool rect_collision(rect_t a, rect_t b);
 
 #endif /* RECT_H_ */

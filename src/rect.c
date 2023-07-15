@@ -114,9 +114,9 @@ void rect_terminate(void)
 	glDeleteProgram(rect_shader);
 }
 
-bool rect_contains_point(rect_t r, float p[2])
+bool rect_collision(rect_t a, rect_t b)
 {
-	bool inside_x = p[0] >= r.x && p[0] < r.x + r.w;
-	bool inside_y = p[1] >= r.y && p[1] < r.y + r.h;
+	bool inside_x = a.x + a.w >= b.x && a.x < b.x + b.w;
+	bool inside_y = a.y + a.h >= b.y && a.y < b.y + b.h;
 	return inside_x && inside_y;
 }

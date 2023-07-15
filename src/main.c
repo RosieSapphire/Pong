@@ -10,7 +10,8 @@ int main(void)
 	rect_init();
 	ball_init();
 
-	paddle pad_left = paddle_create((rgbf_t){1, 1, 1});
+	paddle pad_left = paddle_create(PAD_LEFT);
+	paddle pad_right = paddle_create(PAD_RIGHT);
 	double time_last = window_get_time();
 	while(window_is_open())
 	{
@@ -20,9 +21,11 @@ int main(void)
 
 		window_clear();
 		paddle_draw(pad_left);
+		paddle_draw(pad_right);
 		paddle_update(&pad_left, dt);
+		paddle_update(&pad_right, dt);
 		ball_draw();
-		ball_update(dt, pad_left);
+		ball_update(dt, pad_left, pad_right);
 		window_poll_and_swap();
 	}
 

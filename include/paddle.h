@@ -3,12 +3,17 @@
 
 #include "rect.h"
 
+enum paddle_side {
+	PAD_LEFT,
+	PAD_RIGHT
+};
+
 typedef struct {
 	rect_t rect;
-	rgbf_t col;
+	enum paddle_side side;
 } paddle;
 
-paddle paddle_create(rgbf_t col);
+paddle paddle_create(enum paddle_side side);
 void paddle_draw(paddle p);
 void paddle_update(paddle *p, double dt);
 

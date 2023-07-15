@@ -5,6 +5,6 @@
 
 void ball_init(void);
 void ball_draw(void);
-void ball_update(double dt, paddle p);
+void ball_update(double dt, paddle l, paddle r);
 
 #endif /* BALL_H */
